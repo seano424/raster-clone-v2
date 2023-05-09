@@ -2,4 +2,4 @@
   import { page } from '$app/stores'
 </script>
 
-<h1>I am the error page!</h1>
+<h1>{$page.status}: {$page.error?.message ?? 'Uncertain error'}</h1>
